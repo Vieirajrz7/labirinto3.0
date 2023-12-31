@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Maze Scary</title>
+</head>
+
+<body>
+    <div id="menu">
+        <button class="play" onclick="comecar()">PLAY</button>
+
+        <h1>Maze Scary</h1>
+        <h2 style="margin-bottom: 30px;">Seja bem vindo ao jogo do labirinto<h2>
+                <h2>Tutorial:</h2>
+                <p>Passe com o mouse pelo caminho azul sem tocar nas paredes pretas, a meta é chegar no quadrado
+                    vermelho</p>
+                <address style="color: #ccc;">Feito por Marcelo Vieira Gonçalves</address>
+                    <address style="color: #ccc;">v1.0</address>
+
+    </div>
+    <div id="txtGanhou">
+        <h2>Parabéns você passou da fase 1.<br> Por enquanto não existe mais fases.</h2>
+    </div>
+
+    <div id="tudo">
+
+        <a id="reset" href="index.html">Recomeçar</a>
+
+        <img id="imgSusto" src="img/susto-chica.jpg">
+        <audio id="susto">
+            <source onplay="susto()" src="audio/grito-morreu.mp3" type="audio/mpeg">
+        </audio>
+
+        <div onmouseover="ganhou()" id="ganhou"></div>
+
+        
+
+        <div onmouseover="gameOverEsq()" id="ladoEsquerdo"></div>
+
+        <div onmouseover="gameOverDir()" id="ladoDireito"></div>
+
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
